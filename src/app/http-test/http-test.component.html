@@ -1,6 +1,10 @@
 <p>
   {{someData}}
 </p>
-<p>
+<!--p>
   <img src="{{imgFolder+imgURL}}">
+</p-->
+<p *ngFor="let media of mediaArray">
+  <img src="{{imgFolder+media.filename}}">
+
 </p>
